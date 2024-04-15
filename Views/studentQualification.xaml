@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rfeijooS2tarea.Views.studentQualification"
+             Title="studentQualification">
+    <VerticalStackLayout>
+        <Image
+            Source="logo.png"
+            MaximumHeightRequest="100"></Image>
+        <Label 
+            Text="Sistema de Calificaciones Uisrael"          
+            TextColor="Aquamarine"
+            HorizontalTextAlignment="Center" />
+        <Picker x:Name="pkNombre" Title="Estudiantes">
+            <Picker.Items>
+                <x:String>Riccardo Feijoo</x:String>
+                <x:String>Renato Toasa</x:String>
+                <x:String>Christian Chalá</x:String>
+                <x:String>Alexander Sanchez</x:String>
+                <x:String>Diego Galvez</x:String>
+            </Picker.Items>
+        </Picker>
+        <Label Text="Ingrese la nota de seguimiento 1"></Label>
+        <Entry              
+            x:Name="nt1"
+            Placeholder="Puede ingresar numeros del 0 al 10"
+            Keyboard="Numeric"
+            TextChanged="Entry_Text"></Entry>
+        <Label Text="Ingrese la nota de examen 1"></Label>
+        <Entry
+            x:Name="ex1"
+            Placeholder="Puede ingresar numeros del 0 al 10"
+            Keyboard="Numeric"
+            TextChanged="Entry_Text">
+        </Entry>
+        <Label Text="Ingrese la nota de seguimiento 2"></Label>
+        <Entry
+            x:Name="nt2"
+            Placeholder="Puede ingresar numeros del 0 al 10"
+            Keyboard="Numeric"
+            TextChanged="Entry_Text">
+        </Entry>
+        <Label Text="Ingrese la nota de examen 2"></Label>
+        <Entry
+            x:Name="ex2"
+            Placeholder="Puede ingresar numeros del 0 al 10"
+            Keyboard="Numeric"
+            TextChanged="Entry_Text">
+        </Entry>
+        <Label Text="Ingrese la nota de seguimiento 3"></Label>
+        <Entry
+            x:Name="nt3"
+            Placeholder="Puede ingresar numeros del 0 al 10"
+            Keyboard="Numeric"
+            TextChanged="Entry_Text">
+        </Entry>
+        <Label Text="Ingrese la nota de examen 3"></Label>
+        <Entry
+            x:Name="ex3"
+            Placeholder="Puede ingresar numeros del 0 al 10"
+            Keyboard="Numeric"
+            TextChanged="Entry_Text">
+        </Entry>
+        <DatePicker
+            x:Name="date"            
+            Format="dd/MM/yyyy"></DatePicker>
+        <Button
+            x:Name="btnCalculate"
+            Text="Calcular Nota"
+            Clicked="btnCalculate_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
